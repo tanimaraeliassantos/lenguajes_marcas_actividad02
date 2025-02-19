@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+	font-family: sans-serif;
+	background-image: url('img/fondo.jpg');
+    width: 100vw;
+    height: 100vh;
+	background-size:cover;
+	background-repeat: no-repeat;
+}
+
+header {
+	background-color: #333;
+	color: white;
+	text-align: center;
+	padding: 20px;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.intro-frase {
+	text-align: center;
+    padding: 30px;
+    font-weight: bold;
+    color: white;
+}
+
+.intro-poster {
+	width: 700px; /* Ancho de la imagen */
+	height: 300px; /* Alto de la imagen */
+	border: 10px outset brown; /* Borde */
+	border-radius: 22px; /* Bordes redondeados */
+	cursor: pointer;
+}
