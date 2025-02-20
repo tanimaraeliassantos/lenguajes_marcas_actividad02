@@ -2,7 +2,14 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+	font-family: 'Breaking Bad';
 }
+
+@font-face {
+	font-family: 'Breaking Bad';
+	src: url('fuentes/breaking_bad.ttf'),
+}
+
 body {
 	font-family: sans-serif;
 	background-image: url('img/fondo.jpg');
@@ -29,14 +36,14 @@ section {
 .intro-frase {
 	text-align: center;
     padding: 30px;
-    font-weight: bold;
+    font-size: 30px;
     color: white;
 }
 
 .intro-poster {
-	width: 700px; /* Ancho de la imagen */
-	height: 300px; /* Alto de la imagen */
-	border: 10px outset brown; /* Borde */
-	border-radius: 22px; /* Bordes redondeados */
+	width: 700px;
+	height: 300px;
+	border: 10px outset brown;
+	border-radius: 22px;
 	cursor: pointer;
 }
