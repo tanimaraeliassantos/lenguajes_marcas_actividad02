@@ -1,22 +1,31 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 	font-family: 'Breaking Bad';
 }
 
 @font-face {
 	font-family: 'Breaking Bad';
-	src: url('fuentes/breaking_bad.ttf'),
+	src: url('fuentes/breaking_bad.ttf') format('ttf');
 }
 
 body {
 	font-family: sans-serif;
 	background-image: url('img/fondo.jpg');
-    width: 100vw;
-    height: 100vh;
-	background-size:cover;
+	width: 100vw;
+	height: 100%;
+	background-size: cover;
 	background-repeat: no-repeat;
+	display: flex;
+	flex-direction: column;
+}
+
+main {
+	display: flex;
+	justify-content: center; /* Centra horizontalmente el contenido */
+	align-items: center; /* Centra verticalmente el contenido */
+	padding: 20px; /* Espacio alrededor del formulario */
 }
 
 header {
@@ -27,17 +36,17 @@ header {
 }
 
 section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
 }
 
 .intro-frase {
 	text-align: center;
-    padding: 30px;
-    font-size: 30px;
-    color: white;
+	padding: 30px;
+	font-size: 30px;
+	color: white;
 }
 
 .intro-poster {
@@ -46,4 +55,88 @@ section {
 	border: 10px outset brown;
 	border-radius: 22px;
 	cursor: pointer;
+}
+
+/* Formulario */
+form {
+	background-color: rgba(
+		255,
+		255,
+		255,
+		0.5
+	); /* Fondo blanco semitransparente */
+	padding: 20px;
+	border-radius: 10px; /* Bordes redondeados */
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+	width: 80%; /* Ancho del formulario (ajustable) */
+	max-width: 600px; /* Ancho máximo del formulario */
+}
+
+fieldset {
+	border: none; /* Elimina el borde predeterminado del fieldset */
+	margin-bottom: 20px;
+	padding: 0;
+}
+
+legend {
+	font-size: 1.2em; /* Tamaño de letra más grande para las leyendas */
+	font-weight: bold;
+	margin-bottom: 10px;
+}
+
+label {
+	display: block; /* Etiquetas en bloque para mejor accesibilidad */
+	margin-bottom: 5px;
+	font-size: 10px;
+}
+
+input[type='text'],
+input[type='email'],
+input[type='date'],
+select,
+textarea {
+	width: 100%;
+	padding: 10px;
+	margin-bottom: 10px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	font-size: 2em; /* Tamaño de letra más grande para los campos */
+	box-sizing: border-box; /* Incluye el padding y el borde en el ancho */
+}
+
+textarea {
+	resize: vertical; /* Permite redimensionar verticalmente el área de texto */
+}
+
+input[type='radio'] {
+	margin-right: 5px;
+}
+
+input[type='submit'],
+input[type='reset'],
+input[type='file'] {
+	background-color: #007bff; /* Color de fondo azul (puedes cambiarlo) */
+	color: white;
+	padding: 10px 20px;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	font-size: 1em;
+	margin-top: 10px;
+}
+
+input[type='submit']:hover,
+input[type='reset']:hover,
+input[type='file']:hover {
+	background-color: #0056b3; /* Color de fondo azul más oscuro al pasar el ratón */
+}
+
+/* Estilos para mejorar la accesibilidad */
+label,
+legend,
+input,
+select,
+textarea,
+button {
+	font-size: 1em;
 }
