@@ -72,8 +72,11 @@ section {
 	align-items: center;
 	justify-content: space-between;
 }
+
 .intro-logo {
 	background-image: url('img/logo.png');
+	background-size: cover;
+	background-repeat: no-repeat;
 	width: 175px;
 	height: 177px;
 	display: block;
