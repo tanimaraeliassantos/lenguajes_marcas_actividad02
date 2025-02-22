@@ -72,6 +72,12 @@ section {
 	align-items: center;
 	justify-content: space-between;
 }
+.intro-logo {
+	background: url("/img/logo.png");
+	width:175px;
+	height: 177px;
+	display: block;
+}
 
 .intro-frase {
 	text-align: center;
