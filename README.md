@@ -32,8 +32,7 @@ Introducir un favicon en la pestaña de cada una de las webs a crear.
 
 - Página principal con elemento interactivo que lleva usuarios a páginas secundarias
 - Página secundaria con formulario para que el usuario pueda participar de un juego temático enviando sus datos a un correo
-- Loads view of a list of items
-- On user click, view opens with details for item clicked
+- Página secundaria con tabla periódica con personajes e imágenes de la serie
 
 ## Technologies
 
