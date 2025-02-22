@@ -85,7 +85,7 @@ section {
 
 .volver-btn {
 	display: inline-block;
-	background-color: #8b0000;
+	background-color: #5e6f27;
 	color: white;
 	padding: 10px 20px;
 	margin: 10px;
@@ -98,7 +98,7 @@ section {
 }
 
 .volver-btn:hover {
-	background-color: #a52a2a;
+	background-color: #b9c59e;
 }
 
 /* ==========================================================================
@@ -137,7 +137,7 @@ fieldset label {
 
 .formulario-h1 {
 	color: white;
-	text-decoration: underline overline #8b0000;
+	text-decoration: underline overline #bee700;
 }
 
 .formulario-sexo {
@@ -181,7 +181,7 @@ input[type='radio'] {
 input[type='submit'],
 input[type='reset'],
 input[type='file'] {
-	background-color: #8b0000;
+	background-color: #5e6f27;
 	color: white;
 	padding: 10px 20px;
 	border: none;
@@ -195,7 +195,7 @@ input[type='file'] {
 input[type='submit']:hover,
 input[type='reset']:hover,
 input[type='file']:hover {
-	background-color: #a52a2a;
+	background-color: #b9c59e;
 }
 
 label,
@@ -205,4 +205,83 @@ select,
 textarea,
 button {
 	font-size: 1em;
+}
+
+/* ==========================================================================
+   ESTILOS DE LA TABLA
+   ========================================================================== */
+.tabla-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-color: #5e6f27;
+}
+
+table {
+	width: 100%;
+	max-width: 1000px;
+	border-spacing: 15px;
+	background-color: #333; /* Fondo oscuro */
+	color: #2a2d22; 
+	/* Texto blanco */
+}
+
+/* Estilos para las celdas con nombres de personajes */
+td {
+	font-size: 0.9em; /* Reduce el tamaño de la fuente */
+	line-height: 1.2; /* Ajusta el espaciado entre líneas */
+	margin: 0;
+	border: none;
+	text-align: center;
+	padding: 2px;
+
+	
+}
+
+td img {
+	display: block;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	
+}
+
+.celda-verde-brillante {
+	background-color: #bee700;
+}
+
+.celda-verde-claro {
+	background-color: #cde965;
+}
+
+.celda-morada {
+	background-color: #b18cd0;
+}
+
+.celda-verde-blanquesino {
+	background-color: #edf7c2;
+}
+
+.celda-beige-verdoso {
+	background-color: #b9c59e;
+}
+
+.celda-verde-claro-brillante {
+	background-color: #bce505;
+}
+
+.celda-verde-medio {
+	background-color: #81a600;
+}
+
+.celda-verde-musgo {
+	background-color: #5e6f27;
+}
+
+.celda-verde-musgo-claro {
+	background-color: #7d8f47;
+}
+
+.celda-segunda-tabla {
+	background-color: #becb00;
 }
