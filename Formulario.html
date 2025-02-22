@@ -8,7 +8,7 @@
 		<link rel="icon" href="img/icon.png" type="image/jpeg" />
 	</head>
 	<body>
-		<h1>Breaking Bad – Que comience el juego!</h1>
+		<h1 class="formulario-h1">Breaking Bad – Que comience el juego!</h1>
 
 		<form
 			action="mailto:raul.rodriguez@proeducaglobal.com"
@@ -49,11 +49,12 @@
 			<fieldset>
 				<legend>Información Adicional</legend>
 				<p>Sexo:</p>
-				<label for="hombre">Hombre</label>
 				<input type="radio" id="hombre" name="sexo" value="hombre" />
+				<label for="hombre">Hombre</label>
+				<input type="radio" id="mujer" name="sexo" value="mujer" />
 				<label for="mujer">Mujer</label>
-				<input type="radio" id="mujer" name="sexo" value="mujer" /><br /><br />
-
+			</fieldset>
+			<fieldset>
 				<label for="fechaNacimiento">Fecha de Nacimiento:</label>
 				<input
 					type="date"
@@ -83,6 +84,9 @@
 			<input type="submit" value="Enviar" />
 			<input type="reset" value="Borrar" />
 			<input type="file" value="Elegir archivo" />
+			</form>
+			<br>
+			<a href="index.html" class="volver-btn">Volver a la página principal</a>
 		</form>
 	</body>
 </html>
