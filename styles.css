@@ -19,16 +19,26 @@
    ESTILOS GENERALES DEL BODY
    ========================================================================== */
 
+body.home {
+	font-family: 'Breaking Bad', sans-serif;
+	background-image: url('img/fondo.jpg');
+	width: 100vw;
+	min-height: 100vh;
+	background-size: cover;
+	background-repeat: no-repeat;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
 body {
-	font-family: sans-serif; /* Fuente de respaldo legible */
-	background-image: url('img/fondo.jpg'); /* Imagen de fondo */
-	width: 100vw; /* Ancho completo de la ventana */
-	min-height: 100vh; /* Altura mínima para cubrir toda la ventana */
-	background-size: cover; /* Ajuste de la imagen de fondo */
-	background-repeat: no-repeat; /* Evita la repetición de la imagen */
-	display: flex; /* Uso de flexbox para la disposición */
-	flex-direction: column; /* Disposición en columna */
-	align-items: center; /* Centrado horizontal */
+	font-family: 'Breaking Bad', sans-serif;
+	background-color: #5e6f27;
+	width: 100vw;
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
 
 /* ==========================================================================
@@ -36,10 +46,10 @@ body {
    ========================================================================== */
 
 main {
-	justify-content: center; /* Centra horizontalmente el contenido */
-	align-items: center; /* Centra verticalmente el contenido */
-	padding: 20px; /* Espacio alrededor del contenido */
-	min-height: 100vh; /* Asegura que el main ocupe toda la altura */
+	justify-content: center;
+	align-items: center;
+	padding: 20px;
+	min-height: 100vh;
 }
 
 /* ==========================================================================
@@ -47,7 +57,6 @@ main {
    ========================================================================== */
 
 header {
-	background-color: #333;
 	color: white;
 	text-align: center;
 	padding: 20px;
@@ -67,7 +76,7 @@ section {
 .intro-frase {
 	text-align: center;
 	padding: 10px;
-	font-size: 30px;
+	font-size: 20px;
 	color: white;
 }
 
@@ -210,6 +219,30 @@ button {
 /* ==========================================================================
    ESTILOS DE LA TABLA
    ========================================================================== */
+.tabla-h1 {
+	word-break: break-all;
+	width: 300px;
+	align-items: center;
+	font-size: 30px;
+	background-color: none;
+	float: left;
+}
+
+span {
+	background-color: #bee700;
+	color: #2a2d22;
+}
+
+.tabla-h2 {
+	width: 200px;
+	position: absolute;
+	float: right;
+	margin-top: 100px;
+	margin-left: 230px;
+	text-align: left;
+	color: #ea0000;
+}
+
 .tabla-container {
 	display: flex;
 	flex-direction: column;
@@ -218,32 +251,35 @@ button {
 }
 
 table {
-	width: 100%;
+	border-spacing: 8px;
 	max-width: 1000px;
-	border-spacing: 15px;
-	background-color: #333; /* Fondo oscuro */
-	color: #2a2d22; 
-	/* Texto blanco */
+	background-color: #333;
+	color: #2a2d22;
 }
 
-/* Estilos para las celdas con nombres de personajes */
-td {
-	font-size: 0.9em; /* Reduce el tamaño de la fuente */
-	line-height: 1.2; /* Ajusta el espaciado entre líneas */
-	margin: 0;
-	border: none;
-	text-align: center;
-	padding: 2px;
+figcaption {
+	font-size: 40px;
+	font-weight: 700;
+}
 
-	
+td {
+	text-align: center;
+	vertical-align: bottom;
 }
 
 td img {
-	display: block;
+	width: 50px;
+	height: 60px;
+}
+
+.imagen img {
 	width: 100%;
-	height: 100%;
-	object-fit: cover;
-	
+	height: 270px;
+	display: block;
+}
+.celda-segunda-tabla {
+	width: 80px;
+	height: 80px;
 }
 
 .celda-verde-brillante {
