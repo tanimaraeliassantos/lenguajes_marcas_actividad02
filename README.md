@@ -24,7 +24,7 @@ Introducir la tipografía facilitada para que pueda ser usada en todo el proyect
 No se puede instalar en el equipo, sino que tenéis que escribir el código necesario en CSS para ello.
 Introducir un favicon en la pestaña de cada una de las webs a crear.
 
-**Mira la aplicación online [aquí](https://tanimaraeliassantos.github.io/breakingbadfanpage/).**
+**Mira la aplicación online [aquí](https://tanimaraeliassantos.github.io/lenguajes_marcas_actividad02/).**
 
 ![Breaking Bad Showcase](img/breakingbadshowcase.gif)
 
