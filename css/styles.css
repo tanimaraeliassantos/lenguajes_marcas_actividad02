@@ -1,0 +1,332 @@
+/* ==========================================================================
+   RESET Y CONFIGURACIÓN BASE
+   ========================================================================== */
+
+/* Reseteo básico de estilos para asegurar consistencia entre navegadores */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/* Carga de la tipografía personalizada "Breaking Bad" */
+@font-face {
+	font-family: 'Breaking Bad';
+	src: url('fuentes/breaking_bad.ttf') format('ttf');
+}
+
+/* ==========================================================================
+   ESTILOS GENERALES DEL BODY
+   ========================================================================== */
+
+body.home {
+	font-family: 'Breaking Bad', sans-serif;
+	background-image: url('/img/fondo.jpg');
+	width: 100vw;
+	min-height: 100vh;
+	background-size: cover;
+	background-repeat: no-repeat;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+body {
+	font-family: 'Breaking Bad', sans-serif;
+	background-color: #5e6f27;
+	width: 100vw;
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+/* ==========================================================================
+   ESTILOS DEL CONTENIDO PRINCIPAL (MAIN)
+   ========================================================================== */
+
+main {
+	justify-content: center;
+	align-items: center;
+	padding: 20px;
+	min-height: 100vh;
+}
+
+/* ==========================================================================
+   ESTILOS DEL ENCABEZADO (HEADER)
+   ========================================================================== */
+
+header {
+	color: white;
+	text-align: center;
+	padding: 20px;
+}
+
+h1 {
+	padding: 20px;
+}
+
+section {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.intro-logo {
+	background-image: url('/img/logo.PNG');
+	background-size: cover;
+	background-repeat: no-repeat;
+	width: 175px;
+	height: 177px;
+	display: block;
+}
+
+.intro-frase {
+	text-align: center;
+	padding: 10px;
+	font-size: 20px;
+	color: white;
+}
+
+.intro-poster {
+	width: 700px;
+	height: 300px;
+	border: 10px outset brown;
+	border-radius: 22px;
+	cursor: pointer;
+}
+
+/* ==========================================================================
+   ESTILOS DEL BOTÓN DE VOLVER (.volver-btn)
+   ========================================================================== */
+
+.volver-btn {
+	display: inline-block;
+	background-color: #5e6f27;
+	color: white;
+	padding: 10px 20px;
+	margin: 10px;
+	text-decoration: none;
+	border-radius: 5px;
+	border: 1px solid white;
+	margin-top: 20px;
+	cursor: pointer;
+	font-size: 1em;
+}
+
+.volver-btn:hover {
+	background-color: #b9c59e;
+}
+
+/* ==========================================================================
+   ESTILOS DEL FORMULARIO (FORM)
+   ========================================================================== */
+
+form {
+	background-color: rgba(
+		255,
+		255,
+		255,
+		0.5
+	); /* Fondo blanco semitransparente */
+	padding: 20px;
+	margin-bottom: 20px;
+	border-radius: 10px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+	width: 80%;
+	max-width: 600px;
+}
+
+fieldset {
+	border: none;
+}
+
+fieldset p {
+	display: inline-block;
+	margin: 10px;
+}
+
+fieldset input[type='radio'],
+fieldset label {
+	display: inline-block;
+	margin-right: 5px;
+}
+
+.formulario-h1 {
+	color: white;
+	text-decoration: underline overline #bee700;
+}
+
+.formulario-sexo {
+	border: none;
+	display: inline;
+}
+
+legend {
+	font-weight: bold;
+	margin-bottom: 10px;
+}
+
+label {
+	display: block;
+	margin-bottom: 5px;
+	font-size: 1em;
+}
+
+input[type='text'],
+input[type='email'],
+input[type='date'],
+select,
+textarea {
+	width: 100%;
+	padding: 10px;
+	margin-bottom: 10px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	font-size: 1em;
+	box-sizing: border-box;
+}
+
+textarea {
+	resize: vertical;
+}
+
+input[type='radio'] {
+	margin-right: 5px;
+}
+
+input[type='submit'],
+input[type='reset'],
+input[type='file'] {
+	background-color: #5e6f27;
+	color: white;
+	padding: 10px 20px;
+	border: none;
+	border-radius: 5px;
+	border: 1px solid white;
+	cursor: pointer;
+	font-size: 1em;
+	margin-top: 10px;
+}
+
+input[type='submit']:hover,
+input[type='reset']:hover,
+input[type='file']:hover {
+	background-color: #b9c59e;
+}
+
+label,
+legend,
+input,
+select,
+textarea,
+button {
+	font-size: 1em;
+}
+
+/* ==========================================================================
+   ESTILOS DE LA TABLA
+   ========================================================================== */
+.tabla-h1 {
+	word-break: break-all;
+	width: 300px;
+	align-items: center;
+	font-size: 30px;
+	background-color: none;
+	float: left;
+}
+
+span {
+	background-color: #bee700;
+	color: #2a2d22;
+}
+
+.tabla-h2 {
+	width: 200px;
+	position: absolute;
+	float: right;
+	margin-top: 100px;
+	margin-left: 230px;
+	text-align: left;
+	color: #ea0000;
+}
+
+.tabla-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-color: #5e6f27;
+}
+
+table {
+	border-spacing: 8px;
+	max-width: 1000px;
+	background-color: #333;
+	color: #2a2d22;
+}
+
+figcaption {
+	font-size: 40px;
+	font-weight: 700;
+}
+
+td {
+	text-align: center;
+	vertical-align: bottom;
+}
+
+td img {
+	width: 50px;
+	height: 60px;
+}
+
+.imagen img {
+	width: 100%;
+	height: 270px;
+	display: block;
+}
+.celda-segunda-tabla {
+	width: 80px;
+	height: 80px;
+}
+
+.celda-verde-brillante {
+	background-color: #bee700;
+}
+
+.celda-verde-claro {
+	background-color: #cde965;
+}
+
+.celda-morada {
+	background-color: #b18cd0;
+}
+
+.celda-verde-blanquesino {
+	background-color: #edf7c2;
+}
+
+.celda-beige-verdoso {
+	background-color: #b9c59e;
+}
+
+.celda-verde-claro-brillante {
+	background-color: #bce505;
+}
+
+.celda-verde-medio {
+	background-color: #81a600;
+}
+
+.celda-verde-musgo {
+	background-color: #5e6f27;
+}
+
+.celda-verde-musgo-claro {
+	background-color: #7d8f47;
+}
+
+.celda-segunda-tabla {
+	background-color: #becb00;
+}
