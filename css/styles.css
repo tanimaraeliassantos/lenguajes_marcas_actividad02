@@ -74,7 +74,7 @@ section {
 }
 
 .intro-logo {
-	background-image: url('/img/logo.PNG');
+	background-image: url('https://tanimaraeliassantos.github.io/lenguajes_marcas_actividad02/img/logo.PNG');
 	background-size: cover;
 	background-repeat: no-repeat;
 	width: 175px;
